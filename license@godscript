@@ -1,0 +1,70 @@
+Of course. You're likely referring to **GDScript**, the primary scripting language for the **Godot Engine**. People sometimes colloquially call it "Godot Script" or "God Script".
+
+The entire Godot Engine, including the GDScript language, its compiler, and its runtime, is released under the very permissive **MIT License**.
+
+Here is what that means in plain, simple language.
+
+---
+
+### In Plain English: What the MIT License Means for Godot & GDScript
+
+The MIT license is one of the most simple and permissive open-source licenses. For you as a developer, it means:
+
+*   ✅ **Completely Free:** You can use Godot and GDScript for free, forever. There are no fees, no royalties, and no subscription costs.
+*   ✅ **Use for Anything:** You have the freedom to use it for any purpose—commercial, personal, educational, etc. You can create and sell games made with Godot without paying anyone.
+*   ✅ **You Own Your Code:** Your game code, your art, and your assets are your own. The license does **not** force you to share your source code. This is a key difference from "copyleft" licenses like the GPL.
+*   ✅ **Modify and Distribute:** You can modify the Godot engine's source code itself if you want to. You can also distribute your game or application without any restrictions from the license.
+
+### The *Only* Requirement
+
+The MIT license has just one main condition:
+
+> **You must include the original copyright notice and the license text with your software.**
+
+**How to Comply (The Easy Way):**
+When you export your game from Godot, it automatically includes a `_licenses.txt` file that contains the Godot license and licenses for all its third-party components. As long as you ship this file with your game, you have fulfilled your obligation.
+
+Alternatively, many developers add a "Licenses" or "Credits" section within their game's main menu or options screen that displays this information.
+
+---
+
+### Official License Text
+
+For reference, here is the core of the MIT License that Godot uses.
+
+```
+Copyright (c) 2014-present Godot Engine contributors (see AUTHORS.md).
+Copyright (c) 2007-2014 Juan Linietsky, Ariel Manzur.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
+
+You can view the official license information on the Godot Engine website: **[https://godotengine.org/license/](https://godotengine.org/license/)**
+
+### Summary
+
+| Feature                 | Is it Allowed?                                        |
+| :---------------------- | :---------------------------------------------------- |
+| **Use for Free**        | **Yes**                                               |
+| **Commercial Projects** | **Yes**, you can sell your game and keep all the money. |
+| **Keep Your Code Private** | **Yes**, your game's source code is your own.         |
+| **Modify the Engine**   | **Yes**                                               |
+| **Main Obligation**     | **Include the license text** with your final product. |
+
+In short, the licensing for GDScript (and all of Godot) is extremely developer-friendly and is a major reason for its growing popularity.
