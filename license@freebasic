@@ -1,0 +1,75 @@
+Of course. The licensing for FreeBASIC is a key aspect of the project and is designed to be very flexible for developers.
+
+Here is a breakdown of the FreeBASIC license model.
+
+### The Short Answer (TL;DR)
+
+FreeBASIC uses a **dual-license model** to separate the compiler from the programs it creates:
+
+1.  **The Compiler (`fbc.exe`):** Licensed under the **GNU GPL** (General Public License).
+2.  **The Runtime & Standard Libraries (`libfb.a`, etc.):** Licensed under the **GNU LGPL** (Lesser General Public License).
+
+This combination is very common for compilers and is extremely permissive for developers. **Crucially, it allows you to create closed-source, commercial applications without any obligation to release your own source code.**
+
+---
+
+### Detailed Breakdown
+
+#### 1. The Compiler - GNU GPL v2
+
+The FreeBASIC compiler itself (`fbc.exe` or `fbc` on Linux/macOS) is distributed under the **GNU General Public License, version 2**.
+
+**What this means:**
+*   You are free to download, use, and run the compiler for any purpose (personal, educational, commercial).
+*   If you **modify the source code of the compiler itself** and distribute your modified version, you must also release your modifications under the GPL.
+
+> **Key Point:** The GPL license applies *only to the compiler program itself*. It **does not** "infect" or apply to the programs you create *with* the compiler.
+
+#### 2. The Runtime & Standard Libraries - GNU LGPL v2.1
+
+This is the most important part for developers. The code that gets linked into your final executable file (the runtime library that handles functions like `PRINT`, `INPUT`, file I/O, graphics, etc.) is licensed under the **GNU Lesser General Public License, version 2.1**.
+
+The LGPL was specifically designed for libraries to allow them to be used by proprietary (closed-source) software.
+
+**What this means for you as a developer:**
+*   You can create applications for any purpose, including **commercial and closed-source software**.
+*   You can sell your application without paying any royalties or fees.
+*   You **do not** have to release the source code of your own application.
+
+**Your obligations under the LGPL are minimal:**
+1.  **Acknowledge the Library:** You must state that your program uses the FreeBASIC runtime library and that the library is licensed under the LGPL. A note in your "About" box or documentation is sufficient.
+2.  **Provide the LGPL License Text:** You must include a copy of the LGPL license text with your application.
+3.  **Allow Library Replacement:** You must make it possible for an end-user to replace the FreeBASIC library with a different (e.g., newer or modified) version. This is the core requirement of the LGPL.
+    *   **If you use dynamic linking** (linking to a `.dll` or `.so` file), this requirement is automatically met.
+    *   **If you use static linking** (the default in FreeBASIC), the standard way to comply is to provide your application's object files (`.o` files) upon request, allowing a user to re-link them with a different version of the library. However, a more common and accepted practice is to simply provide a written offer to supply these object files.
+
+---
+
+### Summary Table
+
+| Component | License | What it means for your program |
+| :--- | :--- | :--- |
+| **FreeBASIC Compiler** (`fbc.exe`) | **GPL** | You can use it freely. The license only matters if you modify the compiler's source code. |
+| **FreeBASIC Libraries** (`libfb.a`) | **LGPL** | You can create **closed-source and commercial** programs. You don't need to release your source code. |
+| **Your Program** (your `.bas` code) | **Your Choice** | Your code is your own. You can license it however you wish (e.g., keep it proprietary, or choose an open-source license like MIT, Apache, etc.). |
+
+### In Simple Terms: Can I...?
+
+*   **Can I use FreeBASIC to make a commercial game and sell it?**
+    *   **Yes.**
+
+*   **Do I have to release my game's source code if I do?**
+    *   **No.**
+
+*   **Do I have to pay anyone to use FreeBASIC?**
+    *   **No.** It's free of charge.
+
+*   **Do I have to put a splash screen in my app saying "Made with FreeBASIC"?**
+    *   **No.** You only need to mention its use in your documentation or credits and include the LGPL license text.
+
+### Official Source
+
+For the definitive and official license text, you can always refer to the FreeBASIC documentation.
+**Official License Page:** [https://www.freebasic.net/wiki/wikka.php?wakka=DocLicence](https://www.freebasic.net/wiki/wikka.php?wakka=DocLicence)
+
+> **Disclaimer:** This is a simplified explanation of software licensing. It is not legal advice. For high-stakes commercial projects, consulting with a lawyer familiar with software licensing is always recommended.
